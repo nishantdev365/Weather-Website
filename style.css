@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#hero_section {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/sunset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#hero_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* semi-transparent black color */
+}
+
+.hero_weather_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70vw;
+    column-gap: 50px;
+}
+
+.degree {
+    font-size: 4em;
+}
+
+.city h6 {
+    font-size: 2.5em;
+}
+
+.city small {
+    font-size: 1em;
+}
+
+.side_panel h1 {
+    font-weight: 400;
+    font-size: medium;
+}
+
+.side_panel {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    position: absolute;
+    /* padding-left: 50px; */
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    background: rgba(155, 155, 155, 0.25);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+
+}
+
+.search_box {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.input_box {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: solid 1.5px cornsilk;
+    background-color: transparent;
+    outline: none;
+    padding-top: 40px;
+}
+
+.input_box::placeholder {
+    color: rgb(202, 204, 204);
+    font-size: medium;
+}
+
+.search_btn {
+    padding: 28px;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+.search_btn i {
+    color: black;
+}
+
+hr {
+    margin: 25px 50px;
+}
+
+.side_panel h1 {
+    margin-left: 50px;
+}
+
+.details_lists {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+}
+
+td {
+    padding-bottom: 10px;
+}
+

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div id="hero_section">
+
+            <div class="hero_weather_details">
+                <div class="degree">
+                    <h1><span id="temp"></span><span>&#8451;</span></h1>
+                </div>
+                <div class="city">
+                    <h6 id="cityName">City</h6>
+                    <small id="time"></small>
+                    <small id="day"></small>
+                    <small id="date"></small>
+                </div>
+                <div class="weather_icons">
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="side_panel">
+            <div class="search_box">
+                <input type="text" placeholder="Enter Location" class="input_box" id="city">
+                <button class="search_btn" id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <hr>
+
+            <h1>Weather Details</h1>
+            <div class="details_lists">
+
+                <div class="weather_type">
+                    <table>
+                        <tr>
+                            <td>Feels_like</td>
+
+                        </tr>
+                        <tr>
+                            <td>Cloud_pct</td>
+
+                        </tr>
+                        <tr>
+                            <td>Humidity</td>
+
+                        </tr>
+                    </table>
+                </div>
+                <div class="weather_data">
+                    <table>
+                        <tr>
+                            <td><span id="feels_like"></span> deg</td>
+
+                        </tr>
+                        <tr>
+                            <td><span id="cloud_pct"></span></td>
+
+                        </tr>
+                        <tr>
+                            <td><span id="humidity"></span> %</td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1>Max & Min Temperature</h1>
+            <div class="details_lists">
+
+                <div class="weather_type">
+                    <table>
+                        <tr>
+                            <td>Max_temp</td>
+
+                        </tr>
+                        <tr>
+                            <td>Min_temp</td>
+
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="weather_data">
+                    <table>
+                        <tr>
+                            <td><span id="max_temp"></span> deg</td>
+
+                        </tr>
+                        <tr>
+                            <td><span id="min_temp"></span> deg</td>
+
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1>Wind Details</h1>
+            <div class="details_lists">
+
+                <div class="weather_type">
+                    <table>
+                        <tr>
+                            <td>Wind_degrees</td>
+
+                        </tr>
+                        <tr>
+                            <td>Wind_speed</td>
+
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="weather_data">
+                    <table>
+                        <tr>
+                            <td><span id="wind_degrees"></span></td>
+
+                        </tr>
+                        <tr>
+                            <td><span id="wind_speed"></span> km/h</td>
+
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1>Sun Timing</h1>
+            <div class="details_lists">
+
+                <div class="weather_type">
+                    <table>
+                        <tr>
+                            <td>Sunrise</td>
+
+                        </tr>
+                        <tr>
+                            <td>Sunset</td>
+
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="weather_data">
+                    <table>
+                        <tr>
+                            <td><span id="sunrise"></span></td>
+
+                        </tr>
+                        <tr>
+                            <td><span id="sunset"></span></td>
+
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <script src="https://kit.fontawesome.com/8fb0e61d6d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
