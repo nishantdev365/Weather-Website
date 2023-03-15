@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: white;
 }
 
@@ -68,8 +68,6 @@
 
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-
-
 }
 
 .search_box {
@@ -124,3 +122,125 @@ td {
     padding-bottom: 10px;
 }
 
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    #hero_section {
+        height: 30vh;
+    }
+
+    .hero_weather_details {
+        flex-direction: row;
+        justify-content: start;
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .degree {
+        font-size: 2em;
+    }
+
+    .city h6 {
+        font-size: 1.8em;
+    }
+
+    .city small {
+        font-size: 0.8em;
+    }
+
+    .side_panel {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 180px;
+        overflow: visible;
+        scroll-behavior: smooth;
+        background: rgba(0, 0, 0, 0.85);
+
+        backdrop-filter: blur(11.5px);
+        -webkit-backdrop-filter: blur(11.5px);
+    }
+
+    .search_box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .input_box {
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 80%;
+        font-size: 1em;
+        padding-top: 20px;
+    }
+
+    .search_btn {
+        padding: 20px;
+        font-size: 1.2em;
+    }
+
+    .side_panel h1 {
+        margin-left: 0px;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .details_lists {
+        padding: 25px;
+        flex-wrap: wrap;
+    }
+
+    td {
+        padding-bottom: 5px;
+    }
+}
+
+/* For tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    #hero_section {
+        height: 30vh;
+    }
+
+    .hero_weather_details {
+        flex-direction: row;
+        justify-content: start;
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .degree {
+        font-size: 3.5em;
+    }
+
+    .city h6 {
+        font-size: 2em;
+    }
+
+    .city small {
+        font-size: 0.9em;
+    }
+
+    .search_btn {
+        padding: 25px;
+        font-size: 1.4em;
+    }
+
+    .side_panel {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 180px;
+        overflow: visible;
+        scroll-behavior: smooth;
+        background: rgba(0, 0, 0, 0.85);
+
+        backdrop-filter: blur(11.5px);
+        -webkit-backdrop-filter: blur(11.5px);
+    }
+
+    .side_panel h1 {
+        font-size: 1.3em;
+    }
+}
