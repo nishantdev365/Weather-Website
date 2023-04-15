@@ -61,10 +61,7 @@ submit.addEventListener("click", (e) => {
     getWeather(city.value)
 })
 
-// Get weather data for Delhi by default
-// getWeather();
 
-// Get weather data for the user's current location on page load
 getLocation();
 
 
